@@ -1,0 +1,27 @@
+{
+  "People": [
+    {
+      "Surname": "Першина",
+      "Name": "Алина",
+      "Patronymic": "Андреевна",
+      "AverageBall": 6.4
+    },
+    {
+      "Surname": "Иванов",
+      "Name": "Иван",
+      "Patronymic": "Ивнович",
+      "AverageBall": 5.6
+    },
+    {
+      "Surname": "Павленко",
+      "Name": "Павел",
+      "Patronymic": "Павлович",
+      "AverageBall": 6.0
+    },
+    {
+      "Surname": "Пингвинов",
+      "Name": "Пингвин",
+      "Patronymic": "Пингвинович",
+      "AverageBall": 4.6
+    }
+  ],"AverageBallSelectedChaptersOfComputerScience":4.75,"AverageBallAlgorithmsAndDataStructures":5.0,"AverageBallMathematicalModelingOfComplexSystems":6.5,"AverageBallOperatingSystemsAndEnvironments":5.75,"AverageBallInternetApplicationDevelopment":6.25,"GroupAverage":5.65}

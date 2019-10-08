@@ -1,0 +1,4 @@
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Release\netcoreapp2.1\Task1.csprojAssemblyReference.cache
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Release\netcoreapp2.1\Task1.csproj.CoreCompileInputs.cache
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Release\netcoreapp2.1\Task1.AssemblyInfoInputs.cache
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Release\netcoreapp2.1\Task1.AssemblyInfo.cs

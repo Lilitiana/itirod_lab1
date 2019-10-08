@@ -1,0 +1,10 @@
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\bin\Debug\netcoreapp2.1\win-x86\Task1.deps.json
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\bin\Debug\netcoreapp2.1\win-x86\Task1.runtimeconfig.json
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\bin\Debug\netcoreapp2.1\win-x86\Task1.runtimeconfig.dev.json
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\bin\Debug\netcoreapp2.1\win-x86\Task1.dll
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\bin\Debug\netcoreapp2.1\win-x86\Task1.pdb
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Debug\netcoreapp2.1\win-x86\Task1.csproj.CoreCompileInputs.cache
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Debug\netcoreapp2.1\win-x86\Task1.AssemblyInfoInputs.cache
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Debug\netcoreapp2.1\win-x86\Task1.AssemblyInfo.cs
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Debug\netcoreapp2.1\win-x86\Task1.dll
+D:\Для учёбы\4 курс\ИТиРОД\Task1\Task1\obj\Debug\netcoreapp2.1\win-x86\Task1.pdb
