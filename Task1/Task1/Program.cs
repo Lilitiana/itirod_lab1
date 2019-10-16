@@ -1,4 +1,4 @@
-﻿using ClosedXML.Excel;
+using ClosedXML.Excel;
 using CsvHelper;
 using Newtonsoft.Json;
 using System;
@@ -22,14 +22,11 @@ namespace Task1
                     {
                         using (CsvReader csvReader = new CsvReader(sr))
                         {
-                            // указываем используемый разделитель
                             csvReader.Configuration.Delimiter = ";";
                             csvReader.Configuration.HeaderValidated = null;
                             csvReader.Configuration.MissingFieldFound = null;
-                            // получаем строки
                             people = csvReader.GetRecords<Person>().ToList();
-
-                            //средние баллы
+                            group.People = people;
                             foreach (Person p in people)
                             {
                                 p.Process();
@@ -49,8 +46,10 @@ namespace Task1
                     }
                     if (args[5] == "JSON")
                         WriteJsonFile(group, people, args[3]);
-                    if (args[5] == "EXCEL")
-                        WriteExelFile(group, args[3]); ;
+                    else if(args[5] == "EXCEL")
+                        WriteExelFile(group, args[3]); 
+                    else
+                        throw new Exception("Incorrect parameters: "+ args[5]);
                 }
                 else
                     throw new Exception("Incorrect parameters");
@@ -59,6 +58,7 @@ namespace Task1
             {
                 Console.WriteLine(e.Message);
             }
+            Console.WriteLine("end of program");
             Console.ReadLine();
         }
 
