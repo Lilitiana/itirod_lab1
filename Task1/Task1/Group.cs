@@ -1,28 +1,35 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-
+using System.Linq;
 
 namespace Task1
 {
-    [DataContract]
     public class Group
     {
-        [DataMember]
-        public List<Person> People { get; set; }
-        [DataMember]
-        public double AverageBallSelectedChaptersOfComputerScience { get; set; }//Избранные главы информатики
-        [DataMember]
-        public double AverageBallAlgorithmsAndDataStructures { get; set; }//Алгоритмы и структуры данных
-        [DataMember]
-        public double AverageBallMathematicalModelingOfComplexSystems { get; set; }//Математическое моделирование сложных систем
-        [DataMember]
-        public double AverageBallOperatingSystemsAndEnvironments { get; set; }//Операционные системы и среды
-        [DataMember]
-        public double AverageBallInternetApplicationDevelopment { get; set; }//Разработка приложений для Интернет
-        [DataMember]
-        public double GroupAverage { get; set; }//Средняя оценка группы        
+        public List<Subject> Subjects { get; set; } = new List<Subject>();
+        public List<Person> Persons { get; set; } = new List<Person>();
+        public double Ball { get; set; } = 0;
+        public Group (List<string> file)
+        {
+            string[] tmp = file[0].Split(';');
+            for (int i = 3; i < tmp.Length; i++)
+                Subjects.Add(new Subject() { Name = tmp[i],Ball=0});
+            file.RemoveAt(0);
+            foreach(string p in file)
+            {
+                tmp = p.Split(";");
+                Person person = new Person() { Surname = tmp[0], Name = tmp[1], Patronymic = tmp[2] };
+                for(int i = 3; i < tmp.Length; i++)
+                {
+                    person.Ball+=Convert.ToDouble(tmp[i]);
+                    Subjects[i - 3].Ball += Convert.ToDouble(tmp[i]);
+                }
+                person.Ball /= (tmp.Length - 3);
+                Persons.Add(person);
+            }
+            foreach (Subject subject in Subjects)
+                subject.Ball /= Persons.Count;
+            Ball = Subjects.Sum(p => p.Ball) / Subjects.Count;
+        }
     }
 }
